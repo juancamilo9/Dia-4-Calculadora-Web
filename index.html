@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<he0ad>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora</title>
+</he0ad>
+<body>
+    <div class="container-calc">
+        <div class="screen">
+            <div class="input-container">
+                <input type="number" name="" id="number-one" class="number-screen">
+                <input type="number" name="" id="number-two" class="number-screen">
+            </div>
+            <span name="" id="result"></span> 
+        </div>
+        <div class="container-numbers-symbol">
+            <div>
+                <button class="symbol" onclick="sumar()">+</button>
+                <button class="symbol" onclick="restar()">-</button>
+                <button class="symbol" onclick="multiplicar()">X</button>
+                <button class="symbol" onclick="dividir()">/</button>
+            </div>
+            <div class="container-row">
+                <div class="row">
+                    <button class="math" onclick="raizCuadrada()">Sqrt</button>
+                    <button class="math" onclick="potencia()">Pow</button>
+                </div>
+                <div class="row">
+                    <button class="math" onclick="valorAbsoluto()">Abs</button>
+                    <button class="math" onclick="generarRandom()">Random</button>
+                </div>
+            </div>
+            
+            <div class="row">
+                <button class="math round" onclick="RedondearNumero()">Round</button>
+                <button class="math round" onclick="RedondearNumeroCeil()">Ceil</button>
+                <button class="math round" onclick="RedondearNumeroFloor()">Floor</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
