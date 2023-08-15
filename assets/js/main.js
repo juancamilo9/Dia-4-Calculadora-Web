@@ -57,27 +57,25 @@ function generarRandom(){
     mostrarResultado(operacion);
 }
 
-function RedondearNumero(){
+function capturarNumeroARedondear(){
     let numeroARedondear = document.getElementById("result").textContent;
-    console.log(numeroARedondear);
-    let operacion = Math.round(+numeroARedondear);
+    return numeroARedondear;
+}
+
+function RedondearNumero(){
+    let operacion = Math.round(+capturarNumeroARedondear());
     mostrarResultado(operacion)   
 }
 
 function RedondearNumeroCeil(){
-    let numeroARedondear = document.getElementById("result").textContent;
-    console.log(numeroARedondear);
-    let operacion = Math.ceil(+numeroARedondear);
+    let operacion = Math.ceil(+capturarNumeroARedondear());
     mostrarResultado(operacion)   
 }
 
 function RedondearNumeroFloor(){
-    let numeroARedondear = document.getElementById("result").textContent;
-    console.log(numeroARedondear);
-    let operacion = Math.floor(+numeroARedondear);
+    let operacion = Math.floor(+capturarNumeroARedondear());
     mostrarResultado(operacion)   
 }
-
 
 function mostrarResultado(operacion){
     console.log(operacion);
